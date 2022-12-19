@@ -17,7 +17,7 @@ html {
   }
 body{
     height: 100%;
-    background-image: url('/assets/img/bga.jpg');
+    background-image: url('/assets/img/catt.png');
     background-size:cover;
     display: flex;
     align-items: center;
@@ -29,7 +29,7 @@ body{
     position: relative;
     max-width: 400px;
     margin: 0 auto;
-    background: #e8e8e8;
+    background: transparent;
     max-width: 350px;
 }
 .wraper.playing .icon-pause {
@@ -68,7 +68,7 @@ display: none;
     margin-top: 5px;
 }
 .status {
-    color: red;
+    color: #ff0071;
 }
 
 .btn{
@@ -78,7 +78,7 @@ display: none;
     cursor: pointer;
 }
 button.btn.play {
-    color: red;
+    color: #ff0071;
     font-size: 35px;
 }
 .control {
@@ -91,7 +91,7 @@ button.btn.back,button.btn.next, button.btn.rand, button.btn.repeat{
 /* -webkit-appearance: none; */
 width: 100%;
 height: 6px;
-background: #f09041;
+background: #ff0071;
 outline: none;
 opacity: 0.7;
 -webkit-transition: 0.2s;
@@ -105,7 +105,7 @@ cursor: pointer;
 appearance: none;
 width: 12px;
 height: 6px;
-background-color: red;
+background-color: #ff0071;
 cursor: pointer;
 }
 
@@ -170,3 +170,10 @@ button.more {
 .control .btn.active {
     color: var(--primary-color);
   }
+
+
+@media(max-width:450px){
+    body{
+        background-image: url('/assets/img/mb2.jpg');
+    }
+}
