@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nghe nhạc</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/music.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <div class="wraper">
+
+        <div class="container">
+            <div class="header">
+                <div class="status">Now Playing</div>
+                <div class="title">Một bài hát hay</div>
+            </div>
+            <div class="cd">
+                <img class="cdImg" src="assets/img/galaxy.png" alt="song">
+            </div>
+            <div class="control">
+                <button class="btn repeat"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+                <button class="btn back"><i class="fa-solid fa-backward-step"></i></button>
+                <button class="btn play">
+                    <i class="fa-solid fa-circle-play icon-play"></i>
+                    <i class="fa-solid fa-circle-pause icon-pause"></i>
+                </button>
+                <button class="btn next"><i class="fa-solid fa-forward-step"></i></button>
+                <button class="btn rand"><i class="fa-solid fa-shuffle"></i></button>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+
+            <audio id="audio" src=""></audio>
+        </div>
+        <div class="playlist">
+            
+        </div>
+    </div>
+<script src="assets/js/music.js"></script>
+</body>
+</html>
